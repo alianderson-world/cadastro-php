@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+    <!--=============== Metas Compatibilidade ===============-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== Nome do site ===============-->
+    <title>Cadastro de cliente - teste</title>
+   
+    <!--=============== Descrição do site ===============-->
+    <meta name="description" content="cadastro de cliente - teste">
+
+    <!--=============== Favicon ===============-->
+    <link rel="icon" type="image/png" href="./img/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/logo.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="./img/logo.png">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <meta property="og:logo" content="./img/logo.png" size="180x180">
+
+    <!--=============== Og Site ===============-->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="cadastro de cliente - teste">
+    <meta property="og:description" content="cadastro de cliente - teste">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1920">
+
+    <!--=============== Twitter ===============-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cadastrocliente">
+    <meta name="twitter:title" content="cadastro de cliente - teste">
+    <meta name="twitter:description" content="cadastro de cliente - teste">
+    <meta name="twitter:image" content="/assets/images/frontpage/share.png">
+    <meta name="theme-color" content="#46944a">
+    <meta name="robots" content="index,follow">
+
+    <!--=============== Css ===============-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+    <!--=============== Css ===============-->
+    
+    <!--=============== Bibliotecas ===============-->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-R5s35B5LnGubGQw9R+7L6TgNOg5/sqJ7z3t2n1YPU9Omj9/q2CufNzp4HnpbCEXYoedISyx1brw10VnB39V7JQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <!--=============== Bibliotecas ===============-->
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="" class="logo">WAI </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#work">Nosso Trabalho</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#careers">Carreiras</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+    
+    <div class="container-cred">
+        <button onclick="openModalConsignado()">Crédito Consignado</button>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Wai</h1>
+            <h2>Contato</h2>
+            <address>
+                5534 Em Algum Lugar. No Mundo 22193-10212<br>
+                <a class="footer__btn" href="mailto:example@gmail.com">Envie um Email</a>
+            </address>
+        </div>
+        
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Mídia</h2>
+                <ul class="nav__ul">
+                    <li><a href="#">Online</a></li>
+                    <li><a href="#">Impresso</a></li>
+                    <li><a href="#">Anúncios Alternativos</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                <ul class="nav__ul">
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Mapa do Site</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="legal">
+            <p>&copy; 2019 WAI. Todos os direitos reservados.</p>
+            <div class="legal__links">
+                <span>Projeto de estudo. Não comercial ou empresa verdadeira</span>
+            </div>
+        </div>
+    </footer>
+       
+
+<!-- Modal -->
+<div id="myModalConsignado" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModalConsignado()">&times;</span>
+        <!-- Conteúdo do modal aqui -->
+        <div class="wrapper">  
+
+            <div class="form_wrap">
+                <div class="form_1 data_info">
+                    
+                    <form id="myForm1" name="" method="POST" action="">
+        
+                        <div class="form_container">
+                            
+                            <h2>Cadastre na plataforma!</h2>
+                            
+                            <div class="input-container">
+                                <label class="label" for="instituicao"><span class="input-number-decoration">1 →</span> Selecione <span class="input-decoration">*</span></label>
+                                <div class="container-options">
+                                    <input type="radio" name="instituicao" id="inss" value="inss">
+                                    <label for="inss">Inss <span class="absolute-letter">A</span></label>
+                                    <input type="radio" name="instituicao" id="siape" value="siape">
+                                    <label for="siape">Siape <span class="radio-letter">B</span></label>
+                                </div>
+                                                        
+                                    <div class="btn-box">
+                                        <button type="button" id="next1">Próximo</button>
+                                    </div>
+                                </div>
+        
+                        </div>
+                    </form>
+                    
+                </div>
+                
+                <div class="form_2 data_info">
+                    
+                    <form id="myForm2" name="" method="POST" action="">
+        
+                        <div class="form_container">
+                            
+                            <h2>Simule com seus dados!</h2>
+                            
+                            <div class="input-container">
+        
+                                <label class="label" for="nome"><span class="input-number-decoration">1 →</span> Nome <span class="input-decoration">*</span></label>
+                                
+                                <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome"
+                                placeholder="Qual seu nome?"
+                                required spellcheck="false"
+                                >
+                                                            
+                                <div class="underline"></div>
+                                
+                                <div class="btn-box">
+                                    <button type="button" id="back1">Voltar</button>
+                                    <button type="button" id="next2">Próximo</button>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </form>
+                    
+                </div>
+        
+                <div class="form_3 data_info">
+                
+                    <form id="myForm3" name="" method="POST" action="">
+                        
+                        <div class="form_container">
+                            <div class="input_wrap">
+                                <h2>Simule com seus dados!</h2>
+                                
+                                <div class="input-container">
+        
+                                    <label class="label" for="cpf"><span class="input-number-decoration">2 →</span> CPF <span class="input-decoration">*</span></label>
+                                
+                                    <input 
+                                    type="tel" 
+                                    id="cpf" 
+                                    name="cpf" 
+                                    placeholder="000.000.000-00"
+                                    required spellcheck="false"
+                                    >
+    
+                                    <div class="underline"></div>
+    
+                                    <div class="btn-box">
+                                        <button type="button" id="back2">Voltar</button>
+                                        <button type="button" id="next3">Próximo</button>
+                                    </div>
+        
+                                </div>
+                                  
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="form_4 data_info">
+    
+                    <form id="myForm4" name="" method="POST" action="">
+    
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <h2>Simule com seus dados!</h2>
+                            
+                            <div class="input-container">
+        
+                                <label class="label" for="celular"><span class="input-number-decoration">3 →</span> Telefone <span class="input-decoration">*</span></label>
+                            
+                                <input 
+                                type="tel" 
+                                id="celular" 
+                                name="celular" 
+                                required spellcheck="false" 
+                                placeholder="(00) 0 0000-0000"
+                                >
+    
+                                <div class="underline"></div>
+    
+                                <div class="btn-box">
+                                    <button type="button" id="back3">Voltar</button>
+                                    <button type="button" id="next4">Próximo</button>
+                                </div>
+        
+                            </div>
+                              
+                        </div>
+                      </div>
+                    </form>
+                </div>	
+                
+                <div class="form_5 data_info">
+    
+                  <form id="myForm5" name="" method="POST" action="connect.php">
+                
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <h2>Simule com seus dados!</h2>
+                            
+                            <div class="input-container">
+        
+                                <label class="label" for="celular"><span class="input-number-decoration">4 →</span> Nascimento <span class="input-decoration">*</span></label>
+                            
+                                <input 
+                                type="text" 
+                                id="nascimento" 
+                                name="nascimento" 
+                                required spellcheck="false" 
+                                placeholder="00/00/0000"
+                                >
+    
+                                <div class="underline"></div>
+    
+                                <div class="btn-box">
+                                    <button type="button" id="back4">Voltar</button>
+                                    <button type="Submit" id="next5">Enviar</button>
+                                </div>
+        
+                            </div>
+                              
+                        </div>
+                    </div>
+                  </form>
+                </div>	
+    </div>
+    
+    <div class="step-row">
+        <div id="progress">
+            <div id="progressText">0%</div> <!-- Elemento de texto para exibir a porcentagem -->
+        </div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+    </div>
+    
+    <div class="container-terms">
+        <input type="checkbox" id="terms" name="terms" value="terms" checked>
+        <label class="terms" for="terms"> Li e aceito os <a href="#">termos de uso e políticas de privacidade.</a></label>
+    </div>
+    
+    <br><br>
+    
+        </div>
+    </div>
+</div>
+
+<script>
+
+// Função para abrir o modal Consignado
+function openModalConsignado() {
+    var modal = document.getElementById("myModalConsignado");
+    modal.style.display = "block";
+}
+
+// Função para fechar o modal
+function closeModalConsignado() {
+    var modal = document.getElementById("myModalConsignado");
+    modal.style.display = "none";
+}
+
+</script>
+
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+<script type="text/javascript" src="./js/slider.js"></script>
+<script type="text/javascript" src="./js/form.js"></script>
+<script type="text/javascript" src="./js/steps.js"></script>
+</body>
+</html>
