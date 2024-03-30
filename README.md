@@ -7,3 +7,5 @@ Instalação: <br>
 4 - Website não pode ser usado pra uso comercial, por favor respeite a regra e bom conhecimento! :)
 
 Github: @alianderson-world
+
+**Por favor, não use para nenhum propósito contra ética o projeto de finanças. Estude focando em aprender e evoluir!**
